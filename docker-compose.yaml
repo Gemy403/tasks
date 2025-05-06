@@ -1,0 +1,17 @@
+version: "3.9"
+
+services:
+  task-web:
+    build:
+      context: .
+      args:
+        USER_ID: 1000  
+        GROUP_ID: 1000 
+    container_name: django
+    command: gunicorn --reload --workers 2 --bind 0.0.0.0:80 project.wsgi:application --timeout 120
+    volumes:
+      - .:/tasks_joy
+    ports:
+      - "80:80"
+    mem_limit: 1g
+    cpus: 0.75
