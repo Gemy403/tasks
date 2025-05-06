@@ -20,4 +20,4 @@ admin.site.register(Regions,RegionAdmin)
 admin.site.register(SubRegions)
 admin.site.register(Kpi)
 
-admin.site.register(KpiValues)
+# admin.site.register(KpiValues)
