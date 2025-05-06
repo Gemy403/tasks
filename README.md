@@ -6,3 +6,6 @@
 - Installed Gunicorn
 - Installed Docker
 - Pushed Fake data with Faker
+- Made Tabular inline for admin page
+- Installed decouple to Secure Sensitive Data
+- Deployed Project On Server 
